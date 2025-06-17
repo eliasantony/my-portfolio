@@ -10,8 +10,6 @@ import Section from "../components/Section";
 import foodFellasMockup from "../assets/foodfellas_mockup.png";
 import knotMockup from "../assets/knot_mockup.png";
 import {ExternalLink} from "lucide-react";
-import clsx from 'clsx';
-import { button } from "framer-motion/client";
 
 interface FeaturedProjectProps {
   id: string;
