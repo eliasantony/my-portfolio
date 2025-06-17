@@ -27,7 +27,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-4 left-1/2 -translate-x-1/2 w-[90%] max-w-6xl z-50 transition-all duration-300 rounded-xl
+      className={`fixed top-4 left-1/2 -translate-x-1/2 w-[80%] max-w-6xl z-50 transition-all duration-300 rounded-xl
       ${hasScrolled ? 'glass shadow-lg' : 'bg-transparent'}`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">

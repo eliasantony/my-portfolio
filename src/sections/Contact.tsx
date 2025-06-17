@@ -7,7 +7,6 @@
 ================================================================================
 */
 import Section from '../components/Section';
-import Button from '../components/ui/Button';
 import { Github, Linkedin, Mail } from 'lucide-react';
 
 const Contact = () => {
@@ -17,7 +16,7 @@ const Contact = () => {
                 Get In <span className="text-accent">Touch</span>
             </h2>
             <div className="max-w-xl mx-auto glass p-8 md:p-12 rounded-xl">
-                <form action="[https://formspree.io/f/YOUR_UNIQUE_ID](https://formspree.io/f/YOUR_UNIQUE_ID)" method="POST" className="space-y-6">
+                <form action="https://formspree.io/f/mblykjbb" method="POST" className="space-y-6">
                     <div>
                         <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-1">Name</label>
                         <input type="text" name="name" id="name" required className="w-full bg-dark-200 border border-dark-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-accent" />
@@ -31,16 +30,22 @@ const Contact = () => {
                         <textarea name="message" id="message" rows={4} required className="w-full bg-dark-200 border border-dark-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-accent"></textarea>
                     </div>
                     <div>
-                        <Button className="w-full">Send Message</Button>
+                        <button className={`
+                            px-6 py-3 rounded-lg font-semibold text-white
+                            bg-accent hover:bg-accent-dark transition-all duration-300
+                            focus:outline-none focus:ring-2 focus:ring-accent-light focus:ring-opacity-50
+                            shadow-lg hover:shadow-xl transform hover:-translate-y-1`}>
+                            Send Message
+                        </button>
                     </div>
                 </form>
             </div>
             <div className="text-center mt-12">
                 <p className="text-gray-400 mb-4">Or reach out via my socials:</p>
                 <div className="flex justify-center gap-6">
-                    <a href="[https://github.com/your-username](https://github.com/your-username)" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-accent transition-colors"><Github size={28} /></a>
-                    <a href="[https://linkedin.com/in/your-username](https://linkedin.com/in/your-username)" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-accent transition-colors"><Linkedin size={28} /></a>
-                    <a href="mailto:your-email@example.com" className="text-gray-400 hover:text-accent transition-colors"><Mail size={28} /></a>
+                    <a href="https://github.com/eliasantony" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-accent transition-colors"><Github size={28} /></a>
+                    <a href="https://www.linkedin.com/in/elias-antony-247935289/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-accent transition-colors"><Linkedin size={28} /></a>
+                    <a href="mailto:elias@antony.at" className="text-gray-400 hover:text-accent transition-colors"><Mail size={28} /></a>
                 </div>
             </div>
         </Section>

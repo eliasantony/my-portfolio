@@ -10,9 +10,9 @@ import Section from '../components/Section';
 import SkillBadge from '../components/SkillBadge';
 
 const skills = {
-    languages: ['Dart', 'JavaScript', 'TypeScript', 'HTML5', 'CSS3', 'Python', 'Java'],
+    languages: ['Dart', 'JavaScript', 'TypeScript', 'C#', 'Java', 'HTML5', 'CSS3', 'Python'],
     frameworks: ['Flutter', 'React', 'Next.js', 'Node.js', 'Firebase'],
-    tools: ['Git & GitHub', 'Figma', 'Firestore', 'Vercel', 'Jira', 'Postman'],
+    tools: ['Git', 'Figma', 'Firebase', 'Adobe CC', 'Vercel', 'Jira', 'Postman'],
 };
 
 const Skills = () => {

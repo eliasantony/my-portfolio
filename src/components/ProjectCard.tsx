@@ -35,12 +35,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, imgSrc, t
           ))}
         </div>
         <div className="mt-auto flex justify-end gap-4">
-          <a href={repoUrl} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-accent transition-colors">
-            <Github size={22} />
-          </a>
-          <a href={liveUrl} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-accent transition-colors">
-            <ExternalLink size={22} />
-          </a>
+            {repoUrl && (
+            <a href={repoUrl} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-accent transition-colors">
+              <Github size={22} />
+            </a>
+            )}
+            {liveUrl && (
+            <a href={liveUrl} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-accent transition-colors">
+              <ExternalLink size={22} />
+            </a>
+            )}
         </div>
       </div>
     </motion.div>

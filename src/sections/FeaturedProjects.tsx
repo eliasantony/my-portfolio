@@ -7,11 +7,11 @@
 ================================================================================
 */
 import Section from "../components/Section";
-import Button from "../components/ui/Button";
 import foodFellasMockup from "../assets/foodfellas_mockup.png";
 import knotMockup from "../assets/knot_mockup.png";
 import {ExternalLink} from "lucide-react";
-import {Github} from "lucide-react";
+import clsx from 'clsx';
+import { button } from "framer-motion/client";
 
 interface FeaturedProjectProps {
   id: string;
@@ -20,7 +20,6 @@ interface FeaturedProjectProps {
   description: string;
   tech: string[];
   liveUrl: string;
-  repoUrl: string;
   imgSrc: string;
   alignLeft?: boolean;
   techTagColor?: string;
@@ -35,12 +34,10 @@ const FeaturedProject = ({
   description,
   tech,
   liveUrl,
-  repoUrl,
   imgSrc,
   alignLeft = true,
   techTagColor,
   buttonColor,
-  textColor,
 }: FeaturedProjectProps) => (
   <Section
     id={id}
@@ -77,26 +74,15 @@ const FeaturedProject = ({
           ))}
         </div>
         <div className="flex items-center gap-4">
-          <a href={repoUrl} target="_blank" rel="noopener noreferrer">
-            <Button
-              className={`flex items-center gap-2 ${
-                buttonColor ?? "bg-white text-black"
-              }`}
+          <a href={liveUrl} target="_blank" rel="noopener noreferrer">
+          <a href={liveUrl} target="_blank" rel="noopener noreferrer">
+            <button
+              className={`px-6 py-3 rounded-lg font-semibold text-white transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-accent-light focus:ring-opacity-50 shadow-lg hover:shadow-xl transform hover:-translate-y-1 ${buttonColor} hover:brightness-90`}
             >
-              <Github size={20} />
-              Code
-            </Button>
-          </a>
-          <a
-            href={liveUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`${
-              textColor ?? "text-white"
-            } hover:underline flex items-center gap-1`}
-          >
-            Live Demo
-            <ExternalLink size={18} />
+                <ExternalLink className="inline mr-4" />
+                Visit Page
+            </button>
+        </a>
           </a>
         </div>
       </div>
@@ -111,7 +97,7 @@ const FeaturedProjects = () => {
         id="foodfellas"
         gradient="bg-gradient-to-br from-[#1A8100] to-[#FEB47B]"
         title="FoodFellas"
-        description="An AI-powered recipe-sharing app where users can create, discover, and personalize meals. Features include smart search with TypeSense, avatar customization, AI-generated recipes and images, and a weekly meal planner."
+        description="An AI-powered recipe-sharing app where users can create, discover, and personalize meals. Features include smart search with TypeSense, smart recommendation with a vector database, AI-generated recipes and images, and image to recipe functionality."
         tech={[
           "Flutter",
           "Firebase",
@@ -120,19 +106,17 @@ const FeaturedProjects = () => {
           "Gemini API",
         ]}
         liveUrl="https://foodfellas.app"
-        repoUrl="https://github.com/eliasantony/food_fellas"
         imgSrc={foodFellasMockup}
         alignLeft={true}
         techTagColor="bg-white/30 text-white"
-        buttonColor="bg-[#1A8100] text-white"
-        textColor="text-white"
+        buttonColor="bg-[#1A8100]"
       />
 
       <FeaturedProject
         id="knot"
         gradient="bg-gradient-to-br from-[#E6683E] to-[#BA5680]"
         title="Knot"
-        description="A private newsletter app for close-knit groups. Members respond to rotating questions with text, photos, or voice—Knot compiles and delivers a shared update. Includes admin tools, deep links, AI summaries, and scheduling."
+        description="A private newsletter app for close-knit groups. Members respond to rotating questions with text, photos, or voice. Knot compiles and delivers a shared update to all members. Includes deep links, AI summaries, notifications and scheduling."
         tech={[
           "Flutter",
           "Firebase",
@@ -142,12 +126,10 @@ const FeaturedProjects = () => {
           "Gemini API",
         ]}
         liveUrl="https://why-knot.app"
-        repoUrl="https://github.com/eliasantony/knot_app"
         imgSrc={knotMockup}
         alignLeft={false}
         techTagColor="bg-white/30 text-white"
-        buttonColor="bg-[#BA5680] text-white"
-        textColor="text-white"
+        buttonColor="bg-[#BA5680]"
       />
     </>
   );

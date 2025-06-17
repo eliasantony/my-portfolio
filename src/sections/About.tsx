@@ -17,6 +17,7 @@ const timelineData = [
         date: 'Sep 2022 - July 2025',
         title: 'Bachelor Creative Computing',
         subtitle: 'FH St. Pölten (University of Applied Sciences)',
+        url: 'https://www.fhstp.ac.at/en/study-programmes/media-digital-technologies/creative-computing',
         tech: [],
     },
     // Work: IT-Support at AllesWirdGut Architektur ZT GmbH
@@ -25,6 +26,7 @@ const timelineData = [
         date: 'Since October 2023',
         title: 'IT-Support',
         subtitle: 'AllesWirdGut Architektur ZT GmbH',
+        url: 'https://www.alleswirdgut.at/',
         tech: [
             'Assistance in the IT department',
             'User support',
@@ -37,6 +39,7 @@ const timelineData = [
         date: 'Aug 2024 - Dec 2024',
         title: 'Internship',
         subtitle: 'Digitalsunray Media GmbH',
+        url: 'https://www.digitalsunray.com/',
         tech: ['DevOps', 'Frontend Development', 'Backend Development', 'Software Testing'],
     },
     // Work: Civilian Service at St. Nikolausstiftung
@@ -45,6 +48,7 @@ const timelineData = [
         date: 'Sep 2021 - July 2022',
         title: 'Civilian Service',
         subtitle: 'St. Nikolausstiftung',
+        url: 'https://www.nikolausstiftung.at/',
         tech: ['Assistance tasks in kindergarten'],
     },
     // Education: Higher Computer Science at HTBLuVA Spengergasse
@@ -62,6 +66,7 @@ const timelineData = [
         date: 'June 2021',
         title: 'Corporate IT Services',
         subtitle: 'Entain Services GmbH',
+        url: 'https://www.entaincareers.com/en/locations/austria/',
         tech: [
             'Hardware repair and installation',
             'User support',
@@ -74,6 +79,7 @@ const timelineData = [
         date: 'July 2019',
         title: 'Software Developer',
         subtitle: 'BRZ (Federal Computing Center) GmbH',
+        url: 'https://www.brz.gv.at/',
         tech: [
             'Database access with C#',
             'HTML, CSS, JavaScript, XML',
@@ -86,6 +92,7 @@ const timelineData = [
         date: '2018',
         title: 'Corporate IT Services',
         subtitle: 'bwin.party services (Austria) GmbH',
+        url: 'https://www.entaincareers.com/en/locations/austria/',
         tech: [
             'Insights into ITIL',
             'Win 10 Enterprise - Build 1709 Tests',
@@ -102,9 +109,10 @@ const About = () => {
       </h2>
       <div className="max-w-3xl mx-auto text-center mb-16">
         <p className="text-lg text-gray-300">
-          I'm a product-minded engineer based in Vienna, passionate about building high-quality,
-          user-centric applications. With a background in full-stack development, I enjoy turning complex
-          problems into simple, beautiful, and intuitive designs.
+        I am a product-minded developer based in Vienna, driven by curiosity and a passion for building thoughtful, user-focused applications. 
+        After finishing my studies, I created FoodFellas and Knot—projects that reflect my love for intuitive design and simple, useful experiences. 
+        I enjoy working across the stack and experimenting with AI to see how it can enhance the way we build and interact with software. 
+        I am always excited to learn more, improve my craft, and take on new challenges.
         </p>
       </div>
       <div className="relative max-w-2xl mx-auto">
@@ -118,8 +126,9 @@ const About = () => {
             date={item.date}
             title={item.title}
             subtitle={item.subtitle}
+            url={item.url}
             tech={item.tech}
-            isLeft={index % 2 === 0}
+            isLeft={index % 2 !== 0}
           />
         ))}
       </div>

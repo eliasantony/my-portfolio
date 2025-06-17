@@ -15,27 +15,27 @@ import InvasionAtDawn from '../assets/InvasionAtDawn.png';
 
 const otherProjectsData = [
     {
-        title: 'Invasion at Dawn',
-        description: 'A multiplayer zombie horror game developed in Unity with the Riptide Networking framework. Players must survive against waves of zombies, using various weapons and strategies to stay alive. The game features a dynamic environment, thrilling audio effects, and a point system to buy weapons and upgrades. Developed in a group of 4 during the "Creative Code Lab 4 - Extending Realities" at FH St. Pölten.',
-        imgSrc: InvasionAtDawn,
-        tags: ['Unity', 'C#', 'Riptide Networking', 'Blender', 'Animation'],
-        liveUrl: '#',
-        repoUrl: '#',
-    },
-    {
         title: 'Unity Zombie Shooter',
-        description: 'A 3D zombie shooter game developed in Unity, featuring a first-person perspective, enemy AI, and various weapons. The game includes a health system, ammo management, and a scoring system.',
+        description: 'A 3D zombie shooter game developed in Unity, featuring a first-person perspective, enemy AI, and various weapons. The game includes a health, stamina and hunger system, ammo management, a scoring system and waves with increasing difficulty.',
         imgSrc: UnityZombieShooter,
         tags: ['Unity', 'Blender', 'C#'],
         liveUrl: 'https://eliasantony.github.io/EbCRD_FinalProject/',
         repoUrl: 'https://github.com/eliasantony/EbCRD_FinalProject',
     },
     {
+        title: 'Invasion at Dawn',
+        description: 'A multiplayer zombie horror game developed in Unity with the Riptide Networking framework. Players must survive against waves of zombies, using various weapons and strategies to stay alive. The game features a dynamic environment, thrilling audio effects, and a point system to buy weapons and upgrades. Developed in a group of 4 during the "Creative Code Lab 4 - Extending Realities" at FH St. Pölten.',
+        imgSrc: InvasionAtDawn,
+        tags: ['Unity', 'C#', 'Riptide Networking', 'Blender', 'Animation'],
+        liveUrl: '',
+        repoUrl: '',
+    },
+    {
         title: 'Budget Buddy',
         description: 'An native android expense tracker app written in Kotlin with Jetpack Compose to keep track of your personal finances. Add and manage your expenses, and see visual representations of your spending. Developed during the "Creative Code Lab 3 - Mobile Applications" at FH St. Pölten.',
         imgSrc: BudgetBuddy,
         tags: ['Android', 'Jetpack Compose', 'Kotlin'],
-        liveUrl: '#',
+        liveUrl: '',
         repoUrl: 'https://git.nwt.fhstp.ac.at/cc221025/mc_finalproject',
     },
     {
@@ -43,7 +43,7 @@ const otherProjectsData = [
         description: 'A side-scroller game with platforms, collectibles and enemies. Written in Vanilla JavaScript with HTML Canvas with self drawn assest in photoshop. Developed during the "Creative Code Lab 1 - Games and Playful Frontends" at FH St. Pölten.',
         imgSrc: ForrestOfShadows,
         tags: ['HTML', 'Photoshop', 'Canvas'],
-        liveUrl: '#',
+        liveUrl: '',
         repoUrl: 'https://git.nwt.fhstp.ac.at/cc221025/ccl1_forrestofshadows',
   },
 ];

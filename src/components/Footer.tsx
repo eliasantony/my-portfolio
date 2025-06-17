@@ -10,7 +10,7 @@ const Footer = () => {
     <footer className="bg-dark-200 py-6">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
         <p className="text-gray-400 text-sm">
-          © {new Date().getFullYear()} Elias Antony – Made with <span className="text-red-500">♥</span> using React + Vite
+          © {new Date().getFullYear()} Elias Antony – Made with React + Vite
         </p>
         <button
           onClick={scrollToTop}
