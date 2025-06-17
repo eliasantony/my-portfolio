@@ -15,7 +15,7 @@ const Hero = () => (
         </span> Developer &amp; <span className="text-accent">Engineer</span>
       </h1>
       <p className="text-lg text-gray-400 mb-10 max-w-lg mx-auto">
-        Exploring creative ways to build with Apps and Webpages, one project at a time.
+        Exploring creative ways to build Apps, Webpages and trying out AI, one project at a time.
       </p>
       <Link to="projects" smooth duration={500} offset={-70}>
         <button >See Projects</button>
