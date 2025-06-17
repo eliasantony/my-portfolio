@@ -12,7 +12,7 @@ import Contact from './sections/Contact';
 
 function App() {
   return (
-    <div className="bg-dark-100">
+    <div className="bg-dark-100 overflow-x-hidden">
       <Navbar />
       <main>
       <Hero />

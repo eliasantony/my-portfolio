@@ -5,7 +5,7 @@ import memoji from '../assets/memoji.png';
 const Hero = () => (
   <Section id="hero" className="flex items-center justify-center min-h-screen bg-black text-white text-center">
     <div>
-      <div className="mx-auto mb-8 w-80 h-80 rounded-xl overflow-hidden shadow-2xl transform hover:scale-105 transition">
+      <div className="mx-auto mb-8 mt-8 w-80 h-80 rounded-xl overflow-hidden shadow-2xl transform hover:scale-105 transition">
         <img src={memoji} alt="Elias Memoji" className="w-full h-full object-contain" />
       </div>
       <h1 className="text-6xl font-extrabold mb-6">
